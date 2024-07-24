@@ -1,0 +1,671 @@
+Aspose.PDF {24.7.0} FormDrivenPDF_SpellCheck
+BitMiracle.LibTiff.NET {2.4.649} FormDrivenPDF_SpellCheck
+DocumentFormat.OpenXml {3.0.2} FormDrivenPDF_SpellCheck
+DocumentFormat.OpenXml.Framework {3.0.2} FormDrivenPDF_SpellCheck
+DotNetZip {1.16.0} FormDrivenPDF_SpellCheck
+Google.Protobuf {3.23.0} FormDrivenPDF_SpellCheck
+Grpc {2.46.6} FormDrivenPDF_SpellCheck
+Grpc.Core {2.46.6} FormDrivenPDF_SpellCheck
+Grpc.Core.Api {2.62.0} FormDrivenPDF_SpellCheck
+Grpc.Net.Client {2.62.0} FormDrivenPDF_SpellCheck
+Grpc.Net.Common {2.62.0} FormDrivenPDF_SpellCheck
+IronPdf {2024.7.8} FormDrivenPDF_SpellCheck
+IronPdf.Extensions.ASPX {2023.10.3} FormDrivenPDF_SpellCheck
+IronPdf.Native.Chrome.Windows {2024.7.65} FormDrivenPDF_SpellCheck
+IronPdf.Slim {2024.7.8} FormDrivenPDF_SpellCheck
+IronSoftware.Common {2024.1.7} FormDrivenPDF_SpellCheck
+IronSoftware.Native.PdfModel {2024.7.65} FormDrivenPDF_SpellCheck
+IronSoftware.System.Drawing {2024.7.2} FormDrivenPDF_SpellCheck
+itext {8.0.4} FormDrivenPDF_SpellCheck
+itext.commons {8.0.4} FormDrivenPDF_SpellCheck
+itext7 {8.0.4} FormDrivenPDF_SpellCheck
+Microsoft.Bcl.AsyncInterfaces {8.0.0} FormDrivenPDF_SpellCheck
+Microsoft.DotNet.PlatformAbstrac... {2.0.4} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configuration {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.DependencyI... {8.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.DependencyI... {8.0.1} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.DependencyM... {2.0.4} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.FileProvide... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.FileProvide... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.FileSystemG... {6.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Logging {8.0.0} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Logging.Abs... {8.0.1} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Options {8.0.2} FormDrivenPDF_SpellCheck
+Microsoft.Extensions.Primitives {8.0.0} FormDrivenPDF_SpellCheck
+Newtonsoft.Json {13.0.3} FormDrivenPDF_SpellCheck
+NHunspell {1.2.5554.16953} FormDrivenPDF_SpellCheck
+PDFsharp {6.1.1} FormDrivenPDF_SpellCheck
+PdfSharpCore {1.3.65} FormDrivenPDF_SpellCheck
+SharpZipLib {1.4.2} FormDrivenPDF_SpellCheck
+SixLabors.Fonts {1.0.0} FormDrivenPDF_SpellCheck
+SixLabors.ImageSharp {2.1.8} FormDrivenPDF_SpellCheck
+SixLabors.ImageSharp.Drawing {1.0.0} FormDrivenPDF_SpellCheck
+System.Buffers {4.5.1} FormDrivenPDF_SpellCheck
+System.Configuration.Configurati... {6.0.0} FormDrivenPDF_SpellCheck
+System.Diagnostics.DiagnosticSource {8.0.1} FormDrivenPDF_SpellCheck
+System.Diagnostics.PerformanceCo... {4.5.0} FormDrivenPDF_SpellCheck
+System.Drawing.Common {6.0.0} FormDrivenPDF_SpellCheck
+System.IO {4.3.0} FormDrivenPDF_SpellCheck
+System.Memory {4.5.5} FormDrivenPDF_SpellCheck
+System.Net.Http.Json {8.0.0} FormDrivenPDF_SpellCheck
+System.Net.Http.WinHttpHandler {7.0.0} FormDrivenPDF_SpellCheck
+System.Numerics.Vectors {4.5.0} FormDrivenPDF_SpellCheck
+System.Reflection.Emit {4.7.0} FormDrivenPDF_SpellCheck
+System.Runtime {4.3.0} FormDrivenPDF_SpellCheck
+System.Runtime.CompilerServices.... {6.0.0} FormDrivenPDF_SpellCheck
+System.Security.AccessControl {6.0.0} FormDrivenPDF_SpellCheck
+System.Security.Cryptography.Alg... {4.3.1} FormDrivenPDF_SpellCheck
+System.Security.Cryptography.Enc... {4.3.0} FormDrivenPDF_SpellCheck
+System.Security.Cryptography.Pkcs {4.7.0} FormDrivenPDF_SpellCheck
+System.Security.Cryptography.Pri... {4.3.0} FormDrivenPDF_SpellCheck
+System.Security.Permissions {6.0.0} FormDrivenPDF_SpellCheck
+System.Security.Principal.Windows {5.0.0} FormDrivenPDF_SpellCheck
+System.Text.Encoding.CodePages {7.0.0} FormDrivenPDF_SpellCheck
+System.Text.Encodings.Web {8.0.0} FormDrivenPDF_SpellCheck
+System.Text.Json {8.0.3} FormDrivenPDF_SpellCheck
+System.Threading.Tasks.Extensions {4.5.4} FormDrivenPDF_SpellCheck
+System.ValueTuple {4.5.0} FormDrivenPDF_SpellCheck
+Tesseract {5.2.0} FormDrivenPDF_SpellCheck
+using System;
+using System.Windows.Forms;
+
+namespace PdfSpellChecker
+{
+static class Program
+{
+[STAThread]
+static void Main()
+{
+Application.EnableVisualStyles();
+Application.SetCompatibleTextRenderingDefault(false);
+Application.Run(new PdfSpellChecker.MainForm());
+}
+}
+}
+using System;
+using System.IO;
+using System.Drawing.Imaging;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using Tesseract;
+
+namespace PdfSpellChecker
+{
+public class PdfRenderer : IDisposable
+{
+private readonly string _outputPdfPath;
+private readonly TesseractEngine _engine;
+private PdfDocument _document;
+
+    public PdfRenderer(string outputPdfPath, TesseractEngine engine)
+    {
+        _outputPdfPath = outputPdfPath;
+        _engine = engine;
+        _document = new PdfDocument();
+    }
+
+    public void BeginDocument(string title)
+    {
+        _document.Info.Title = title;
+    }
+
+    public void AddPage(Pix image)
+    {
+        var page = _document.AddPage();
+        using (var gfx = XGraphics.FromPdfPage(page))
+        {
+            using (var ms = new MemoryStream())
+            {
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Tiff);
+                ms.Position = 0;
+                var img = XImage.FromStream(ms);
+                gfx.DrawImage(img, 0, 0, page.Width, page.Height);
+            }
+        }
+    }
+
+    public void EndDocument()
+    {
+        _document.Save(_outputPdfPath);
+    }
+
+    public void Dispose()
+    {
+        _document?.Dispose();
+    }
+}
+}
+using System.Collections.Generic;
+using iTextSharp.text.pdf.parser;
+using iTextSharp.text;
+
+namespace PdfSpellChecker
+{
+public class MyLocationTextExtractionStrategy : LocationTextExtractionStrategy
+{
+public class TextRectangle
+{
+public string Text { get; }
+public float Left { get; }
+public float Bottom { get; }
+public float Right { get; }
+public float Top { get; }
+
+        public TextRectangle(float left, float bottom, float right, float top, string text)
+        {
+            Left = left;
+            Bottom = bottom;
+            Right = right;
+            Top = top;
+            Text = text;
+        }
+    }
+
+    private readonly List<TextRectangle> rects = new List<TextRectangle>();
+
+    public override void RenderText(TextRenderInfo renderInfo)
+    {
+        base.RenderText(renderInfo);
+        var bottomLeft = renderInfo.GetDescentLine().GetStartPoint();
+        var topRight = renderInfo.GetAscentLine().GetEndPoint();
+        rects.Add(new TextRectangle(bottomLeft[0], bottomLeft[1], topRight[0], topRight[1], renderInfo.GetText()));
+    }
+
+    public List<TextRectangle> GetRects()
+    {
+        return rects;
+    }
+}
+}
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
+using NHunspell;
+using Tesseract;
+using System.Drawing;
+
+namespace PdfSpellChecker
+{
+public partial class MainForm : Form
+{
+private List selectedPdfFiles = new List();
+private string customDictionaryPath = string.Empty;
+private string userDefinedErrorsPath = string.Empty;
+private string revisionNumber = string.Empty;
+
+    public MainForm()
+    {
+        InitializeComponent();
+    }
+
+    private void BrowseButton_Click(object sender, EventArgs e)
+    {
+        openFileDialogControl.Multiselect = true;
+        openFileDialogControl.Filter = "PDF files (*.pdf)|*.pdf";
+        if (openFileDialogControl.ShowDialog() == DialogResult.OK)
+        {
+            selectedPdfFiles = openFileDialogControl.FileNames.ToList();
+            UpdateSelectionTextBox();
+            AskForNewFileName();
+        }
+    }
+
+    private void LoadCustomDictionaryButton_Click(object sender, EventArgs e)
+    {
+        openFileDialogControl.Filter = "Dictionary files (*.dic)|*.dic|All files (*.*)|*.*";
+        if (openFileDialogControl.ShowDialog() == DialogResult.OK)
+        {
+            customDictionaryPath = openFileDialogControl.FileName;
+            selectionTextBoxControl.AppendText($"Custom Dictionary Loaded: {customDictionaryPath}\n");
+        }
+    }
+
+    private void LoadUserDefinedErrorsButton_Click(object sender, EventArgs e)
+    {
+        openFileDialogControl.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+        if (openFileDialogControl.ShowDialog() == DialogResult.OK)
+        {
+            userDefinedErrorsPath = openFileDialogControl.FileName;
+            selectionTextBoxControl.AppendText($"User Defined Errors Loaded: {userDefinedErrorsPath}\n");
+        }
+    }
+
+    private void ProcessButton_Click(object sender, EventArgs e)
+    {
+        if (selectedPdfFiles.Count == 0)
+        {
+            MessageBox.Show("Please select PDF files to process.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(revisionNumberTextBoxControl.Text))
+        {
+            MessageBox.Show("Please provide the revision number.");
+            return;
+        }
+
+        revisionNumber = revisionNumberTextBoxControl.Text;
+        EnsureOcrAndSpellCheck();
+    }
+
+    private void EnsureOcrAndSpellCheck()
+    {
+        progressBarControl.Value = 0;
+        progressLabelControl.Text = "0%";
+
+        foreach (var pdfFile in selectedPdfFiles)
+        {
+            string newPdfFileName = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pdfFile),
+                System.IO.Path.GetFileNameWithoutExtension(pdfFile) + "_Checked_" + revisionNumber + "_" + DateTime.Now.ToString("yyyyMMdd") + ".pdf");
+
+            EnsureOcr(pdfFile, newPdfFileName);
+            SpellCheckPdf(newPdfFileName);
+        }
+
+        MessageBox.Show("Spell checking complete.");
+    }
+
+    private void EnsureOcr(string filePath, string newPdfFileName)
+    {
+        try
+        {
+            using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
+            using (var renderer = new PdfRenderer(newPdfFileName, engine))
+            {
+                renderer.BeginDocument(System.IO.Path.GetFileName(filePath));
+                using (var pix = Pix.LoadFromFile(filePath))
+                {
+                    engine.Process(pix);
+                    renderer.AddPage(pix);
+                }
+                renderer.EndDocument();
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"OCR failed: {ex.Message}");
+        }
+    }
+
+    private void SpellCheckPdf(string pdfFilePath)
+    {
+        using (var reader = new iTextSharp.text.pdf.PdfReader(pdfFilePath))
+        {
+            var strategy = new iTextSharp.text.pdf.parser.LocationTextExtractionStrategy();
+            string currentText = string.Empty;
+
+            for (int i = 1; i <= reader.NumberOfPages; i++)
+            {
+                currentText += iTextSharp.text.pdf.parser.PdfTextExtractor.GetTextFromPage(reader, i, strategy);
+            }
+
+            using (var hunspell = new NHunspell.Hunspell("en_us.aff", "en_us.dic"))
+            {
+                List<string> words = currentText.Split(' ').ToList();
+                foreach (var word in words)
+                {
+                    if (!hunspell.Spell(word))
+                    {
+                        var suggestions = hunspell.Suggest(word);
+                        if (suggestions.Any())
+                        {
+                            HighlightSpellingError(pdfFilePath, word);
+                            LogSpellingError(word, suggestions);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private void HighlightSpellingError(string pdfFilePath, string word)
+    {
+        // Highlight the spelling error in the PDF file
+    }
+
+    private void LogSpellingError(string word, List<string> suggestions)
+    {
+        // Log the spelling error with suggestions
+    }
+
+    private void AskForNewFileName()
+    {
+        foreach (var pdfFile in selectedPdfFiles)
+        {
+            string newPdfFileName = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pdfFile),
+                System.IO.Path.GetFileNameWithoutExtension(pdfFile) + "_Checked_" + DateTime.Now.ToString("yyyyMMdd") + ".pdf");
+            saveFileDialogControl.FileName = newPdfFileName;
+            saveFileDialogControl.Filter = "PDF files (*.pdf)|*.pdf";
+            if (saveFileDialogControl.ShowDialog() == DialogResult.OK)
+            {
+                newPdfFileName = saveFileDialogControl.FileName;
+            }
+        }
+    }
+
+    private void UpdateSelectionTextBox()
+    {
+        selectionTextBoxControl.Clear();
+        foreach (var file in selectedPdfFiles)
+        {
+            selectionTextBoxControl.AppendText($"{file}\n");
+        }
+    }
+
+    private void MainTabControl_DrawItem(object sender, DrawItemEventArgs e)
+    {
+        var tabPage = this.mainTabControl.TabPages[e.Index];
+        var tabRect = this.mainTabControl.GetTabRect(e.Index);
+        tabRect.Inflate(-2, -2);
+        var isSelected = this.mainTabControl.SelectedIndex == e.Index;
+
+        using (var brush = new SolidBrush(isSelected ? Color.CornflowerBlue : Color.LightGray))
+        {
+            e.Graphics.FillRectangle(brush, tabRect);
+            TextRenderer.DrawText(e.Graphics, tabPage.Text, this.Font, tabRect, tabPage.ForeColor);
+        }
+    }
+}
+}
+using System;
+using System.Windows.Forms;
+
+namespace PdfSpellChecker
+{
+partial class MainForm
+{
+private System.ComponentModel.IContainer components = null;
+private System.Windows.Forms.TabControl mainTabControl;
+private System.Windows.Forms.TabPage browseTabPage;
+private System.Windows.Forms.TabPage spellCheckExceptionsTabPage;
+private System.Windows.Forms.TabPage userDefinedErrorsTabPage;
+private System.Windows.Forms.Button browseButtonControl;
+private System.Windows.Forms.Button loadCustomDictionaryButtonControl;
+private System.Windows.Forms.Button loadUserDefinedErrorsButtonControl;
+private System.Windows.Forms.Button processButtonControl;
+private System.Windows.Forms.TextBox selectionTextBoxControl;
+private System.Windows.Forms.TextBox spellCheckExceptionsTextBoxControl;
+private System.Windows.Forms.TextBox userDefinedErrorsTextBoxControl;
+private System.Windows.Forms.ProgressBar progressBarControl;
+private System.Windows.Forms.Label progressLabelControl;
+private System.Windows.Forms.OpenFileDialog openFileDialogControl;
+private System.Windows.Forms.SaveFileDialog saveFileDialogControl;
+private System.Windows.Forms.ToolTip toolTipControl;
+private System.Windows.Forms.Label revisionNumberLabelControl;
+private System.Windows.Forms.TextBox revisionNumberTextBoxControl;
+private System.Windows.Forms.Label stepsLabelControl;
+
+    private void InitializeComponent()
+    {
+        this.components = new System.ComponentModel.Container();
+        this.mainTabControl = new System.Windows.Forms.TabControl();
+        this.browseTabPage = new System.Windows.Forms.TabPage();
+        this.spellCheckExceptionsTabPage = new System.Windows.Forms.TabPage();
+        this.userDefinedErrorsTabPage = new System.Windows.Forms.TabPage();
+        this.browseButtonControl = new System.Windows.Forms.Button();
+        this.loadCustomDictionaryButtonControl = new System.Windows.Forms.Button();
+        this.loadUserDefinedErrorsButtonControl = new System.Windows.Forms.Button();
+        this.processButtonControl = new System.Windows.Forms.Button();
+        this.selectionTextBoxControl = new System.Windows.Forms.TextBox();
+        this.spellCheckExceptionsTextBoxControl = new System.Windows.Forms.TextBox();
+        this.userDefinedErrorsTextBoxControl = new System.Windows.Forms.TextBox();
+        this.progressBarControl = new System.Windows.Forms.ProgressBar();
+        this.progressLabelControl = new System.Windows.Forms.Label();
+        this.openFileDialogControl = new System.Windows.Forms.OpenFileDialog();
+        this.saveFileDialogControl = new System.Windows.Forms.SaveFileDialog();
+        this.toolTipControl = new System.Windows.Forms.ToolTip(this.components);
+        this.revisionNumberLabelControl = new System.Windows.Forms.Label();
+        this.revisionNumberTextBoxControl = new System.Windows.Forms.TextBox();
+        this.stepsLabelControl = new System.Windows.Forms.Label();
+
+        this.mainTabControl.SuspendLayout();
+        this.browseTabPage.SuspendLayout();
+        this.spellCheckExceptionsTabPage.SuspendLayout();
+        this.userDefinedErrorsTabPage.SuspendLayout();
+        this.SuspendLayout();
+
+        // 
+        // mainTabControl
+        // 
+        this.mainTabControl.Alignment = System.Windows.Forms.TabAlignment.Left;
+        this.mainTabControl.Controls.Add(this.browseTabPage);
+        this.mainTabControl.Controls.Add(this.spellCheckExceptionsTabPage);
+        this.mainTabControl.Controls.Add(this.userDefinedErrorsTabPage);
+        this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Left;
+        this.mainTabControl.Location = new System.Drawing.Point(0, 0);
+        this.mainTabControl.Multiline = true;
+        this.mainTabControl.Name = "mainTabControl";
+        this.mainTabControl.SelectedIndex = 0;
+        this.mainTabControl.Size = new System.Drawing.Size(200, 561);
+        this.mainTabControl.TabIndex = 0;
+        this.mainTabControl.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+        this.mainTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+        this.mainTabControl.ItemSize = new System.Drawing.Size(30, 100);
+        this.mainTabControl.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.MainTabControl_DrawItem);
+
+        // 
+        // browseTabPage
+        // 
+        this.browseTabPage.Controls.Add(this.browseButtonControl);
+        this.browseTabPage.Controls.Add(this.loadCustomDictionaryButtonControl);
+        this.browseTabPage.Controls.Add(this.loadUserDefinedErrorsButtonControl);
+        this.browseTabPage.Controls.Add(this.revisionNumberLabelControl);
+        this.browseTabPage.Controls.Add(this.revisionNumberTextBoxControl);
+        this.browseTabPage.Controls.Add(this.processButtonControl);
+        this.browseTabPage.Controls.Add(this.selectionTextBoxControl);
+        this.browseTabPage.Controls.Add(this.progressBarControl);
+        this.browseTabPage.Controls.Add(this.progressLabelControl);
+        this.browseTabPage.Location = new System.Drawing.Point(104, 4);
+        this.browseTabPage.Name = "browseTabPage";
+        this.browseTabPage.Padding = new System.Windows.Forms.Padding(3);
+        this.browseTabPage.Size = new System.Drawing.Size(672, 553);
+        this.browseTabPage.TabIndex = 0;
+        this.browseTabPage.Text = "Select PDFs";
+        this.browseTabPage.UseVisualStyleBackColor = true;
+
+        // 
+        // spellCheckExceptionsTabPage
+        // 
+        this.spellCheckExceptionsTabPage.Controls.Add(this.spellCheckExceptionsTextBoxControl);
+        this.spellCheckExceptionsTabPage.Location = new System.Drawing.Point(104, 4);
+        this.spellCheckExceptionsTabPage.Name = "spellCheckExceptionsTabPage";
+        this.spellCheckExceptionsTabPage.Padding = new System.Windows.Forms.Padding(3);
+        this.spellCheckExceptionsTabPage.Size = new System.Drawing.Size(672, 553);
+        this.spellCheckExceptionsTabPage.TabIndex = 1;
+        this.spellCheckExceptionsTabPage.Text = "Spell Check Exceptions";
+        this.spellCheckExceptionsTabPage.UseVisualStyleBackColor = true;
+
+        // 
+        // userDefinedErrorsTabPage
+        // 
+        this.userDefinedErrorsTabPage.Controls.Add(this.userDefinedErrorsTextBoxControl);
+        this.userDefinedErrorsTabPage.Location = new System.Drawing.Point(104, 4);
+        this.userDefinedErrorsTabPage.Name = "userDefinedErrorsTabPage";
+        this.userDefinedErrorsTabPage.Padding = new System.Windows.Forms.Padding(3);
+        this.userDefinedErrorsTabPage.Size = new System.Drawing.Size(672, 553);
+        this.userDefinedErrorsTabPage.TabIndex = 2;
+        this.userDefinedErrorsTabPage.Text = "User Defined Errors";
+        this.userDefinedErrorsTabPage.UseVisualStyleBackColor = true;
+
+        // 
+        // browseButtonControl
+        // 
+        this.browseButtonControl.Location = new System.Drawing.Point(20, 20);
+        this.browseButtonControl.Name = "browseButtonControl";
+        this.browseButtonControl.Size = new System.Drawing.Size(150, 23);
+        this.browseButtonControl.TabIndex = 0;
+        this.browseButtonControl.Text = "Browse PDF Files";
+        this.toolTipControl.SetToolTip(this.browseButtonControl, "Select PDF files to process.");
+        this.browseButtonControl.UseVisualStyleBackColor = true;
+        this.browseButtonControl.Click += new System.EventHandler(this.BrowseButton_Click);
+
+        // 
+        // loadCustomDictionaryButtonControl
+        // 
+        this.loadCustomDictionaryButtonControl.Location = new System.Drawing.Point(20, 49);
+        this.loadCustomDictionaryButtonControl.Name = "loadCustomDictionaryButtonControl";
+        this.loadCustomDictionaryButtonControl.Size = new System.Drawing.Size(150, 23);
+        this.loadCustomDictionaryButtonControl.TabIndex = 1;
+        this.loadCustomDictionaryButtonControl.Text = "Load Custom Dictionary";
+        this.toolTipControl.SetToolTip(this.loadCustomDictionaryButtonControl, "Load custom dictionary for spell checking.");
+        this.loadCustomDictionaryButtonControl.UseVisualStyleBackColor = true;
+        this.loadCustomDictionaryButtonControl.Click += new System.EventHandler(this.LoadCustomDictionaryButton_Click);
+
+        // 
+        // loadUserDefinedErrorsButtonControl
+        // 
+        this.loadUserDefinedErrorsButtonControl.Location = new System.Drawing.Point(20, 78);
+        this.loadUserDefinedErrorsButtonControl.Name = "loadUserDefinedErrorsButtonControl";
+        this.loadUserDefinedErrorsButtonControl.Size = new System.Drawing.Size(150, 23);
+        this.loadUserDefinedErrorsButtonControl.TabIndex = 2;
+        this.loadUserDefinedErrorsButtonControl.Text = "Load User Defined Errors";
+        this.toolTipControl.SetToolTip(this.loadUserDefinedErrorsButtonControl, "Load user defined spelling errors.");
+        this.loadUserDefinedErrorsButtonControl.UseVisualStyleBackColor = true;
+        this.loadUserDefinedErrorsButtonControl.Click += new System.EventHandler(this.LoadUserDefinedErrorsButton_Click);
+
+        // 
+        // revisionNumberLabelControl
+        // 
+        this.revisionNumberLabelControl.AutoSize = true;
+        this.revisionNumberLabelControl.Location = new System.Drawing.Point(20, 109);
+        this.revisionNumberLabelControl.Name = "revisionNumberLabelControl";
+        this.revisionNumberLabelControl.Size = new System.Drawing.Size(91, 13);
+        this.revisionNumberLabelControl.TabIndex = 3;
+        this.revisionNumberLabelControl.Text = "Revision Number:";
+
+        // 
+        // revisionNumberTextBoxControl
+        // 
+        this.revisionNumberTextBoxControl.Location = new System.Drawing.Point(117, 106);
+        this.revisionNumberTextBoxControl.Name = "revisionNumberTextBoxControl";
+        this.revisionNumberTextBoxControl.Size = new System.Drawing.Size(100, 20);
+        this.revisionNumberTextBoxControl.TabIndex = 4;
+
+        // 
+        // processButtonControl
+        // 
+        this.processButtonControl.Location = new System.Drawing.Point(20, 132);
+        this.processButtonControl.Name = "processButtonControl";
+        this.processButtonControl.Size = new System.Drawing.Size(150, 23);
+        this.processButtonControl.TabIndex = 5;
+        this.processButtonControl.Text = "Process Spell Check";
+        this.toolTipControl.SetToolTip(this.processButtonControl, "Process the spell check for selected PDFs.");
+        this.processButtonControl.UseVisualStyleBackColor = true;
+        this.processButtonControl.Click += new System.EventHandler(this.ProcessButton_Click);
+
+        // 
+        // selectionTextBoxControl
+        // 
+        this.selectionTextBoxControl.Location = new System.Drawing.Point(20, 161);
+        this.selectionTextBoxControl.Multiline = true;
+        this.selectionTextBoxControl.Name = "selectionTextBoxControl";
+        this.selectionTextBoxControl.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+        this.selectionTextBoxControl.Size = new System.Drawing.Size(630, 150);
+        this.selectionTextBoxControl.TabIndex = 6;
+        this.selectionTextBoxControl.ReadOnly = true;
+        this.toolTipControl.SetToolTip(this.selectionTextBoxControl, "Preview of selected files.");
+
+        // 
+        // progressBarControl
+        // 
+        this.progressBarControl.Location = new System.Drawing.Point(20, 317);
+        this.progressBarControl.Name = "progressBarControl";
+        this.progressBarControl.Size = new System.Drawing.Size(630, 23);
+        this.progressBarControl.TabIndex = 7;
+
+        // 
+        // progressLabelControl
+        // 
+        this.progressLabelControl.AutoSize = true;
+        this.progressLabelControl.Location = new System.Drawing.Point(20, 343);
+        this.progressLabelControl.Name = "progressLabelControl";
+        this.progressLabelControl.Size = new System.Drawing.Size(24, 13);
+        this.progressLabelControl.TabIndex = 8;
+        this.progressLabelControl.Text = "0%";
+
+        // 
+        // spellCheckExceptionsTextBoxControl
+        // 
+        this.spellCheckExceptionsTextBoxControl.Location = new System.Drawing.Point(6, 6);
+        this.spellCheckExceptionsTextBoxControl.Multiline = true;
+        this.spellCheckExceptionsTextBoxControl.Name = "spellCheckExceptionsTextBoxControl";
+        this.spellCheckExceptionsTextBoxControl.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+        this.spellCheckExceptionsTextBoxControl.Size = new System.Drawing.Size(660, 541);
+        this.spellCheckExceptionsTextBoxControl.TabIndex = 0;
+        this.spellCheckExceptionsTextBoxControl.ReadOnly = true;
+
+        // 
+        // userDefinedErrorsTextBoxControl
+        // 
+        this.userDefinedErrorsTextBoxControl.Location = new System.Drawing.Point(6, 6);
+        this.userDefinedErrorsTextBoxControl.Multiline = true;
+        this.userDefinedErrorsTextBoxControl.Name = "userDefinedErrorsTextBoxControl";
+        this.userDefinedErrorsTextBoxControl.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+        this.userDefinedErrorsTextBoxControl.Size = new System.Drawing.Size(660, 541);
+        this.userDefinedErrorsTextBoxControl.TabIndex = 0;
+        this.userDefinedErrorsTextBoxControl.ReadOnly = true;
+
+        // 
+        // stepsLabelControl
+        // 
+        this.stepsLabelControl.AutoSize = true;
+        this.stepsLabelControl.Location = new System.Drawing.Point(240, 20);
+        this.stepsLabelControl.Name = "stepsLabelControl";
+        this.stepsLabelControl.Size = new System.Drawing.Size(193, 78);
+        this.stepsLabelControl.TabIndex = 9;
+        this.stepsLabelControl.Text = "Steps:\n1. Select PDF Files for Spell Check\n2. Select Custom Dictionary\n3. Select" +
+            " User Defined Errors\n4. Provide Current Revision\n5. Select Process Spell Check";
+        this.stepsLabelControl.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+
+        // 
+        // MainForm
+        // 
+        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.ClientSize = new System.Drawing.Size(784, 561);
+        this.Controls.Add(this.stepsLabelControl);
+        this.Controls.Add(this.mainTabControl);
+        this.Name = "MainForm";
+        this.Text = "PDF Spell Checker";
+
+        this.mainTabControl.ResumeLayout(false);
+        this.browseTabPage.ResumeLayout(false);
+        this.browseTabPage.PerformLayout();
+        this.spellCheckExceptionsTabPage.ResumeLayout(false);
+        this.spellCheckExceptionsTabPage.PerformLayout();
+        this.userDefinedErrorsTabPage.ResumeLayout(false);
+        this.userDefinedErrorsTabPage.PerformLayout();
+        this.ResumeLayout(false);
+        this.PerformLayout();
+    }
+}
+}
+namespace PdfSpellChecker
+{
+public class TextRectangle
+{
+public float Left { get; }
+public float Bottom { get; }
+public float Right { get; }
+public float Top { get; }
+public string Text { get; }
+
+    public TextRectangle(float left, float bottom, float right, float top, string text)
+    {
+        Left = left;
+        Bottom = bottom;
+        Right = right;
+        Top = top;
+        Text = text;
+    }
+}
+}
